@@ -4,7 +4,9 @@
   "description": "> IMPORTANT: This is the Aura version of the Northern Trail Outfitters sample application. If you are looking for a similiar industry use case with Lightning Web Components, visit the eBikes sample application [here](https://github.com/trailheadapps/ebikes-lwc).",
   "main": "prettier.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:unit": "lwc-jest",
+    "test:unit:watch": "lwc-jest --watch",
+    "test:unit:debug": "lwc-jest --debug"
   },
   "repository": {
     "type": "git",
