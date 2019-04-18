@@ -15,4 +15,14 @@ export default class CategorySelectorLwc extends LightningElement {
     // Use the default record type's Id from objectInfo to pass into the standard get picklist api call
     @wire(getPicklistValues, { recordTypeId: '$objectInfo.data.defaultRecordTypeId', fieldApiName: FIELD })
     categories;
+
+    // Fire custom change handler so parent can handle new value
+    handleChange(event) {
+
+        this.value = event.detail.value;
+        const ev = new CustomEvent('change', {
+            detail: this.value
+        });
+        this.dispatchEvent(ev);
+    }
 }
