@@ -85,6 +85,9 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
+            <componentName>merchandiseListLwc</componentName>
+        </componentInstances>
+        <componentInstances>
             <componentInstanceProperties>
                 <name>pageSize</name>
                 <value>8</value>
