@@ -3,7 +3,8 @@
         <h3 slot="title">Merchandise List</h3>
 
         <div class="slds-p-horizontal_small slds-p-bottom_x-small">
-            <c-category-selector-lwc></c-category-selector-lwc>
+            <div>Category: {category}</div>
+            <c-category-selector-lwc onchange={categoryChangeHandler}></c-category-selector-lwc>
         </div>
     </lightning-card>
 </template>
