@@ -1,0 +1,38 @@
+{
+  "controllerValues": {},
+  "defaultValue": null,
+  "eTag": "57e25eb0b5ecf048c873387bdbd07b80",
+  "url": "/services/data/v45.0/ui-api/object-info/Merchandise__c/picklist-values/012000000000000AAA/Category__c",
+  "values": [
+    {
+      "attributes": null,
+      "label": "Womens",
+      "validFor": [],
+      "value": "Womens"
+    },
+    {
+      "attributes": null,
+      "label": "Mens",
+      "validFor": [],
+      "value": "Mens"
+    },
+    {
+      "attributes": null,
+      "label": "Kids",
+      "validFor": [],
+      "value": "Kids"
+    },
+    {
+      "attributes": null,
+      "label": "Gear",
+      "validFor": [],
+      "value": "Gear"
+    },
+    {
+      "attributes": null,
+      "label": "Electronics",
+      "validFor": [],
+      "value": "Electronics"
+    }
+  ]
+}
