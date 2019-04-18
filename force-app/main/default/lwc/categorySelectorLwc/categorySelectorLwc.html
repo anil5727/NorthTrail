@@ -1,3 +1,10 @@
 <template>
-    Category
+    <template if:true={categories.data}>
+        <lightning-combobox
+            label="Category"
+            value={value}
+            options={categories.data.values}
+            onchange={handleChange}>
+        </lightning-combobox>
+    </template>
 </template>
