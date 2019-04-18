@@ -1,0 +1,22 @@
+{
+  "name": "northern-trail-outfitters-lwc",
+  "version": "1.0.0",
+  "description": "> IMPORTANT: This is the Aura version of the Northern Trail Outfitters sample application. If you are looking for a similiar industry use case with Lightning Web Components, visit the eBikes sample application [here](https://github.com/trailheadapps/ebikes-lwc).",
+  "main": "prettier.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulroberttaylor/northern-trail-outfitters-lwc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulroberttaylor/northern-trail-outfitters-lwc/issues"
+  },
+  "homepage": "https://github.com/paulroberttaylor/northern-trail-outfitters-lwc#readme",
+  "dependencies": {
+    "@salesforce/lwc-jest": "^0.4.12"
+  }
+}
