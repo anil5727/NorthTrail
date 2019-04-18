@@ -3,8 +3,11 @@
         <h3 slot="title">Merchandise List</h3>
 
         <div class="slds-p-horizontal_small slds-p-bottom_x-small">
-            <div>Category: {category}</div>
             <c-category-selector-lwc onchange={categoryChangeHandler}></c-category-selector-lwc>
         </div>
+
+        <template for:each={merch} for:item="item">
+            <p key={item.Id}>{item.Name}</p>
+        </template>
     </lightning-card>
 </template>
