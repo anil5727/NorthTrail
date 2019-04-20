@@ -19,6 +19,36 @@ export default class CategorySelectorLwc extends LightningElement {
     // Fire custom change handler so parent can handle new value
     handleChange(event) {
 
+        console.log('handleChange: ');
+
+        const sel = this.template.querySelector('.mySelect');
+        console.log('sel');
+        console.log(JSON.stringify(sel));
+
+        console.log('JSON.stringify(event.detail)');
+        console.log(JSON.stringify(event.detail));
+        this.value = event.detail.value;
+        const ev = new CustomEvent('change', {
+            detail: this.value
+        });
+        this.dispatchEvent(ev);
+    }
+
+    // Fire custom change handler so parent can handle new value
+    handleSelectChange() {
+
+        console.log('handleSelectChange: ');
+
+        const sel = this.template.querySelector('.slds-select');
+        console.log('sel');
+        console.log(JSON.stringify(sel));
+
+        const opts = this.template.querySelectorAll('option');
+        console.log('opts');
+        console.log(JSON.stringify(opts));
+
+        //console.log('JSON.stringify(event.detail)');
+        //console.log(JSON.stringify(event.detail));
         this.value = event.detail.value;
         const ev = new CustomEvent('change', {
             detail: this.value

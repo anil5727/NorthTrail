@@ -9,3 +9,9 @@ package.xml
 **objectTranslations
 **profiles
 **settings
+**jsconfig.json
+**/__tests__/**
+
+**/jsconfig.json
+
+**/.eslintrc.json
