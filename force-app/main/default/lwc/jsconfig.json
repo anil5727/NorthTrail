@@ -6,8 +6,14 @@
             "c/categorySelectorLwc": [
                 "categorySelectorLwc/categorySelectorLwc.js"
             ],
+            "c/errorPanel": [
+                "errorPanel/errorPanel.js"
+            ],
             "c/merchandiseListLwc": [
                 "merchandiseListLwc/merchandiseListLwc.js"
+            ],
+            "c/searchBarLwc": [
+                "searchBarLwc/searchBarLwc.js"
             ]
         }
     },

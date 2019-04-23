@@ -21,4 +21,8 @@ export default class MerchandiseListLwc extends LightningElement {
     categoryChangeHandler(event) {
         this.category = event.detail.value;
     }
+
+    searchChangeHandler(event) {
+        console.log(event.detail.value);
+    }
 }

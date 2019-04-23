@@ -2,22 +2,5 @@
     <template if:true={categories.data}>
         <lightning-combobox class="mySelect" label="Category" value={value} options={categories.data.values} onchange={handleChange}>
         </lightning-combobox>
-
-        <div class="slds-form-element">
-            <label class="slds-form-element__label" for="select-01">Select Label</label>
-            <div class="slds-form-element__control">
-                <div class="slds-select_container">
-                    <select onchange={handleSelectChange} class="slds-select">
-                        <template for:each={categories.data.values} for:item="entry">
-                            <option key={entry.value} value={entry.label}>{entry.label}</option>
-                        </template>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        <template for:each={categories.data.values} for:item="item">
-            <p key={item.value}>{item.label} : {item.value}</p>
-        </template>
     </template>
 </template>
